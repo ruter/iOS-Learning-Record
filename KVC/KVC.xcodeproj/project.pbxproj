@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CCBE08D91C58988400A3261E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBE08D81C58988400A3261E /* main.m */; };
+		CCBE08E11C5898B800A3261E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBE08E01C5898B800A3261E /* Person.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		CCBE08D51C58988400A3261E /* KVC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KVC; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBE08D81C58988400A3261E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCBE08DF1C5898B800A3261E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CCBE08E01C5898B800A3261E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CCBE08D81C58988400A3261E /* main.m */,
+				CCBE08DF1C5898B800A3261E /* Person.h */,
+				CCBE08E01C5898B800A3261E /* Person.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBE08E11C5898B800A3261E /* Person.m in Sources */,
 				CCBE08D91C58988400A3261E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
