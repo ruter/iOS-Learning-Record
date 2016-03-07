@@ -20,7 +20,6 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   self.manager = [[CLLocationManager alloc] init];
-  self.manager.delegate = self;
   
   if ([CLLocationManager locationServicesEnabled]) {
     NSLog(@"Services enabled!");
@@ -31,14 +30,19 @@
   } else {
     NSLog(@"Services disabled!");
   }
+  self.manager.delegate = self;
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
   if (locations.count > 0) {
-    CLLocation *loc = [locations objectAtIndex:0];
+    CLLocation *loc = [locations lastObject];
     NSLog(@"latitude: %f, longitude: %f", loc.coordinate.latitude, loc.coordinate.longitude);
   }
   NSLog(@"did update.");
+}
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+  NSLog(@"Update Error: %@", error);
 }
 
 - (IBAction)locate:(id)sender {
