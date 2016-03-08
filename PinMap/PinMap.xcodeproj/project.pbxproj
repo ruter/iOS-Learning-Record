@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCF7B3901C8E747300349C12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF7B38F1C8E747300349C12 /* main.m */; };
+		CCF7B3931C8E747300349C12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF7B3921C8E747300349C12 /* AppDelegate.m */; };
+		CCF7B3961C8E747300349C12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF7B3951C8E747300349C12 /* ViewController.m */; };
+		CCF7B3991C8E747300349C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF7B3971C8E747300349C12 /* Main.storyboard */; };
+		CCF7B39B1C8E747300349C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF7B39A1C8E747300349C12 /* Assets.xcassets */; };
+		CCF7B39E1C8E747300349C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF7B39C1C8E747300349C12 /* LaunchScreen.storyboard */; };
+		CCF7B3A91C8E747300349C12 /* PinMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF7B3A81C8E747300349C12 /* PinMapTests.m */; };
+		CCF7B3B41C8E747300349C12 /* PinMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF7B3B31C8E747300349C12 /* PinMapUITests.m */; };
+		CCF7B3C21C8E756000349C12 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF7B3C11C8E756000349C12 /* MapKit.framework */; };
+		CCF7B3C41C8E756500349C12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF7B3C31C8E756500349C12 /* CoreLocation.framework */; };
+		CCF7B3C71C8E767800349C12 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF7B3C61C8E767800349C12 /* MyAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCF7B3A51C8E747300349C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF7B3831C8E747200349C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF7B38A1C8E747300349C12;
+			remoteInfo = PinMap;
+		};
+		CCF7B3B01C8E747300349C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF7B3831C8E747200349C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF7B38A1C8E747300349C12;
+			remoteInfo = PinMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCF7B38B1C8E747300349C12 /* PinMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF7B38F1C8E747300349C12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCF7B3911C8E747300349C12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCF7B3921C8E747300349C12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCF7B3941C8E747300349C12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCF7B3951C8E747300349C12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCF7B3981C8E747300349C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCF7B39A1C8E747300349C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF7B39D1C8E747300349C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCF7B39F1C8E747300349C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7B3A41C8E747300349C12 /* PinMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF7B3A81C8E747300349C12 /* PinMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinMapTests.m; sourceTree = "<group>"; };
+		CCF7B3AA1C8E747300349C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7B3AF1C8E747300349C12 /* PinMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF7B3B31C8E747300349C12 /* PinMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinMapUITests.m; sourceTree = "<group>"; };
+		CCF7B3B51C8E747300349C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF7B3C11C8E756000349C12 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CCF7B3C31C8E756500349C12 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CCF7B3C51C8E767800349C12 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		CCF7B3C61C8E767800349C12 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCF7B3881C8E747200349C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7B3C41C8E756500349C12 /* CoreLocation.framework in Frameworks */,
+				CCF7B3C21C8E756000349C12 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7B3A11C8E747300349C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7B3AC1C8E747300349C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCF7B3821C8E747200349C12 = {
+			isa = PBXGroup;
+			children = (
+				CCF7B3C31C8E756500349C12 /* CoreLocation.framework */,
+				CCF7B3C11C8E756000349C12 /* MapKit.framework */,
+				CCF7B38D1C8E747300349C12 /* PinMap */,
+				CCF7B3A71C8E747300349C12 /* PinMapTests */,
+				CCF7B3B21C8E747300349C12 /* PinMapUITests */,
+				CCF7B38C1C8E747300349C12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCF7B38C1C8E747300349C12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7B38B1C8E747300349C12 /* PinMap.app */,
+				CCF7B3A41C8E747300349C12 /* PinMapTests.xctest */,
+				CCF7B3AF1C8E747300349C12 /* PinMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCF7B38D1C8E747300349C12 /* PinMap */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7B3911C8E747300349C12 /* AppDelegate.h */,
+				CCF7B3921C8E747300349C12 /* AppDelegate.m */,
+				CCF7B3941C8E747300349C12 /* ViewController.h */,
+				CCF7B3951C8E747300349C12 /* ViewController.m */,
+				CCF7B3C51C8E767800349C12 /* MyAnnotation.h */,
+				CCF7B3C61C8E767800349C12 /* MyAnnotation.m */,
+				CCF7B3971C8E747300349C12 /* Main.storyboard */,
+				CCF7B39A1C8E747300349C12 /* Assets.xcassets */,
+				CCF7B39C1C8E747300349C12 /* LaunchScreen.storyboard */,
+				CCF7B39F1C8E747300349C12 /* Info.plist */,
+				CCF7B38E1C8E747300349C12 /* Supporting Files */,
+			);
+			path = PinMap;
+			sourceTree = "<group>";
+		};
+		CCF7B38E1C8E747300349C12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7B38F1C8E747300349C12 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF7B3A71C8E747300349C12 /* PinMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7B3A81C8E747300349C12 /* PinMapTests.m */,
+				CCF7B3AA1C8E747300349C12 /* Info.plist */,
+			);
+			path = PinMapTests;
+			sourceTree = "<group>";
+		};
+		CCF7B3B21C8E747300349C12 /* PinMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF7B3B31C8E747300349C12 /* PinMapUITests.m */,
+				CCF7B3B51C8E747300349C12 /* Info.plist */,
+			);
+			path = PinMapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCF7B38A1C8E747300349C12 /* PinMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF7B3B81C8E747300349C12 /* Build configuration list for PBXNativeTarget "PinMap" */;
+			buildPhases = (
+				CCF7B3871C8E747200349C12 /* Sources */,
+				CCF7B3881C8E747200349C12 /* Frameworks */,
+				CCF7B3891C8E747200349C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinMap;
+			productName = PinMap;
+			productReference = CCF7B38B1C8E747300349C12 /* PinMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCF7B3A31C8E747300349C12 /* PinMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF7B3BB1C8E747300349C12 /* Build configuration list for PBXNativeTarget "PinMapTests" */;
+			buildPhases = (
+				CCF7B3A01C8E747300349C12 /* Sources */,
+				CCF7B3A11C8E747300349C12 /* Frameworks */,
+				CCF7B3A21C8E747300349C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF7B3A61C8E747300349C12 /* PBXTargetDependency */,
+			);
+			name = PinMapTests;
+			productName = PinMapTests;
+			productReference = CCF7B3A41C8E747300349C12 /* PinMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCF7B3AE1C8E747300349C12 /* PinMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF7B3BE1C8E747300349C12 /* Build configuration list for PBXNativeTarget "PinMapUITests" */;
+			buildPhases = (
+				CCF7B3AB1C8E747300349C12 /* Sources */,
+				CCF7B3AC1C8E747300349C12 /* Frameworks */,
+				CCF7B3AD1C8E747300349C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF7B3B11C8E747300349C12 /* PBXTargetDependency */,
+			);
+			name = PinMapUITests;
+			productName = PinMapUITests;
+			productReference = CCF7B3AF1C8E747300349C12 /* PinMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCF7B3831C8E747200349C12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Ruter;
+				TargetAttributes = {
+					CCF7B38A1C8E747300349C12 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CCF7B3A31C8E747300349C12 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CCF7B38A1C8E747300349C12;
+					};
+					CCF7B3AE1C8E747300349C12 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CCF7B38A1C8E747300349C12;
+					};
+				};
+			};
+			buildConfigurationList = CCF7B3861C8E747200349C12 /* Build configuration list for PBXProject "PinMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCF7B3821C8E747200349C12;
+			productRefGroup = CCF7B38C1C8E747300349C12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCF7B38A1C8E747300349C12 /* PinMap */,
+				CCF7B3A31C8E747300349C12 /* PinMapTests */,
+				CCF7B3AE1C8E747300349C12 /* PinMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCF7B3891C8E747200349C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7B39E1C8E747300349C12 /* LaunchScreen.storyboard in Resources */,
+				CCF7B39B1C8E747300349C12 /* Assets.xcassets in Resources */,
+				CCF7B3991C8E747300349C12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7B3A21C8E747300349C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7B3AD1C8E747300349C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCF7B3871C8E747200349C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7B3961C8E747300349C12 /* ViewController.m in Sources */,
+				CCF7B3931C8E747300349C12 /* AppDelegate.m in Sources */,
+				CCF7B3C71C8E767800349C12 /* MyAnnotation.m in Sources */,
+				CCF7B3901C8E747300349C12 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7B3A01C8E747300349C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7B3A91C8E747300349C12 /* PinMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF7B3AB1C8E747300349C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF7B3B41C8E747300349C12 /* PinMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCF7B3A61C8E747300349C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF7B38A1C8E747300349C12 /* PinMap */;
+			targetProxy = CCF7B3A51C8E747300349C12 /* PBXContainerItemProxy */;
+		};
+		CCF7B3B11C8E747300349C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF7B38A1C8E747300349C12 /* PinMap */;
+			targetProxy = CCF7B3B01C8E747300349C12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCF7B3971C8E747300349C12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF7B3981C8E747300349C12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCF7B39C1C8E747300349C12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF7B39D1C8E747300349C12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCF7B3B61C8E747300349C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCF7B3B71C8E747300349C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCF7B3B91C8E747300349C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PinMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.PinMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCF7B3BA1C8E747300349C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PinMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.PinMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCF7B3BC1C8E747300349C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.PinMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinMap.app/PinMap";
+			};
+			name = Debug;
+		};
+		CCF7B3BD1C8E747300349C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.PinMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinMap.app/PinMap";
+			};
+			name = Release;
+		};
+		CCF7B3BF1C8E747300349C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.PinMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinMap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CCF7B3C01C8E747300349C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.PinMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinMap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCF7B3861C8E747200349C12 /* Build configuration list for PBXProject "PinMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7B3B61C8E747300349C12 /* Debug */,
+				CCF7B3B71C8E747300349C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF7B3B81C8E747300349C12 /* Build configuration list for PBXNativeTarget "PinMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7B3B91C8E747300349C12 /* Debug */,
+				CCF7B3BA1C8E747300349C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCF7B3BB1C8E747300349C12 /* Build configuration list for PBXNativeTarget "PinMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7B3BC1C8E747300349C12 /* Debug */,
+				CCF7B3BD1C8E747300349C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCF7B3BE1C8E747300349C12 /* Build configuration list for PBXNativeTarget "PinMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF7B3BF1C8E747300349C12 /* Debug */,
+				CCF7B3C01C8E747300349C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCF7B3831C8E747200349C12 /* Project object */;
+}
