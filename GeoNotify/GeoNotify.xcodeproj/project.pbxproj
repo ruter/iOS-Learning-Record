@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCF1CDD11C96533E007B3038 /* CusAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF1CDD01C96533E007B3038 /* CusAnnotation.m */; settings = {ASSET_TAGS = (); }; };
 		CCF640A71C9570A60022471C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640A61C9570A60022471C /* main.m */; };
 		CCF640AA1C9570A60022471C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640A91C9570A60022471C /* AppDelegate.m */; };
 		CCF640AD1C9570A60022471C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640AC1C9570A60022471C /* FirstViewController.m */; };
@@ -16,6 +17,9 @@
 		CCF640B81C9570A70022471C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF640B61C9570A70022471C /* LaunchScreen.storyboard */; };
 		CCF640C31C9570A70022471C /* GeoNotifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640C21C9570A70022471C /* GeoNotifyTests.m */; };
 		CCF640CE1C9570A70022471C /* GeoNotifyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640CD1C9570A70022471C /* GeoNotifyUITests.m */; };
+		CCF640DD1C9571BD0022471C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640DC1C9571BD0022471C /* ThirdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CCF640DF1C95761A0022471C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF640DE1C95761A0022471C /* MapKit.framework */; };
+		CCF640E11C9576270022471C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF640E01C9576270022471C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCF1CDCF1C96533E007B3038 /* CusAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusAnnotation.h; sourceTree = "<group>"; };
+		CCF1CDD01C96533E007B3038 /* CusAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusAnnotation.m; sourceTree = "<group>"; };
 		CCF640A21C9570A60022471C /* GeoNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF640A61C9570A60022471C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCF640A81C9570A60022471C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 		CCF640C91C9570A70022471C /* GeoNotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoNotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF640CD1C9570A70022471C /* GeoNotifyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoNotifyUITests.m; sourceTree = "<group>"; };
 		CCF640CF1C9570A70022471C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF640DB1C9571BD0022471C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		CCF640DC1C9571BD0022471C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		CCF640DE1C95761A0022471C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CCF640E01C9576270022471C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF640E11C9576270022471C /* CoreLocation.framework in Frameworks */,
+				CCF640DF1C95761A0022471C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +96,8 @@
 		CCF640991C9570A60022471C = {
 			isa = PBXGroup;
 			children = (
+				CCF640E01C9576270022471C /* CoreLocation.framework */,
+				CCF640DE1C95761A0022471C /* MapKit.framework */,
 				CCF640A41C9570A60022471C /* GeoNotify */,
 				CCF640C11C9570A70022471C /* GeoNotifyTests */,
 				CCF640CC1C9570A70022471C /* GeoNotifyUITests */,
@@ -110,6 +124,10 @@
 				CCF640AC1C9570A60022471C /* FirstViewController.m */,
 				CCF640AE1C9570A60022471C /* SecondViewController.h */,
 				CCF640AF1C9570A60022471C /* SecondViewController.m */,
+				CCF1CDCF1C96533E007B3038 /* CusAnnotation.h */,
+				CCF1CDD01C96533E007B3038 /* CusAnnotation.m */,
+				CCF640DB1C9571BD0022471C /* ThirdViewController.h */,
+				CCF640DC1C9571BD0022471C /* ThirdViewController.m */,
 				CCF640B11C9570A60022471C /* Main.storyboard */,
 				CCF640B41C9570A70022471C /* Assets.xcassets */,
 				CCF640B61C9570A70022471C /* LaunchScreen.storyboard */,
@@ -275,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF1CDD11C96533E007B3038 /* CusAnnotation.m in Sources */,
 				CCF640B01C9570A60022471C /* SecondViewController.m in Sources */,
+				CCF640DD1C9571BD0022471C /* ThirdViewController.m in Sources */,
 				CCF640AA1C9570A60022471C /* AppDelegate.m in Sources */,
 				CCF640AD1C9570A60022471C /* FirstViewController.m in Sources */,
 				CCF640A71C9570A60022471C /* main.m in Sources */,
@@ -502,6 +522,7 @@
 				CCF640D41C9570A70022471C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCF640D51C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotifyTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +531,7 @@
 				CCF640D71C9570A70022471C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCF640D81C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotifyUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +540,7 @@
 				CCF640DA1C9570A70022471C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
