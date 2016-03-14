@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCF640A71C9570A60022471C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640A61C9570A60022471C /* main.m */; };
+		CCF640AA1C9570A60022471C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640A91C9570A60022471C /* AppDelegate.m */; };
+		CCF640AD1C9570A60022471C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640AC1C9570A60022471C /* FirstViewController.m */; };
+		CCF640B01C9570A60022471C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640AF1C9570A60022471C /* SecondViewController.m */; };
+		CCF640B31C9570A60022471C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF640B11C9570A60022471C /* Main.storyboard */; };
+		CCF640B51C9570A70022471C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF640B41C9570A70022471C /* Assets.xcassets */; };
+		CCF640B81C9570A70022471C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF640B61C9570A70022471C /* LaunchScreen.storyboard */; };
+		CCF640C31C9570A70022471C /* GeoNotifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640C21C9570A70022471C /* GeoNotifyTests.m */; };
+		CCF640CE1C9570A70022471C /* GeoNotifyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF640CD1C9570A70022471C /* GeoNotifyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCF640BF1C9570A70022471C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF6409A1C9570A60022471C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF640A11C9570A60022471C;
+			remoteInfo = GeoNotify;
+		};
+		CCF640CA1C9570A70022471C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF6409A1C9570A60022471C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF640A11C9570A60022471C;
+			remoteInfo = GeoNotify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCF640A21C9570A60022471C /* GeoNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF640A61C9570A60022471C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCF640A81C9570A60022471C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCF640A91C9570A60022471C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCF640AB1C9570A60022471C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CCF640AC1C9570A60022471C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CCF640AE1C9570A60022471C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CCF640AF1C9570A60022471C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CCF640B21C9570A60022471C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCF640B41C9570A70022471C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF640B71C9570A70022471C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCF640B91C9570A70022471C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF640BE1C9570A70022471C /* GeoNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF640C21C9570A70022471C /* GeoNotifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoNotifyTests.m; sourceTree = "<group>"; };
+		CCF640C41C9570A70022471C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF640C91C9570A70022471C /* GeoNotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoNotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF640CD1C9570A70022471C /* GeoNotifyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoNotifyUITests.m; sourceTree = "<group>"; };
+		CCF640CF1C9570A70022471C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCF6409F1C9570A60022471C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF640BB1C9570A70022471C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF640C61C9570A70022471C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCF640991C9570A60022471C = {
+			isa = PBXGroup;
+			children = (
+				CCF640A41C9570A60022471C /* GeoNotify */,
+				CCF640C11C9570A70022471C /* GeoNotifyTests */,
+				CCF640CC1C9570A70022471C /* GeoNotifyUITests */,
+				CCF640A31C9570A60022471C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCF640A31C9570A60022471C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF640A21C9570A60022471C /* GeoNotify.app */,
+				CCF640BE1C9570A70022471C /* GeoNotifyTests.xctest */,
+				CCF640C91C9570A70022471C /* GeoNotifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCF640A41C9570A60022471C /* GeoNotify */ = {
+			isa = PBXGroup;
+			children = (
+				CCF640A81C9570A60022471C /* AppDelegate.h */,
+				CCF640A91C9570A60022471C /* AppDelegate.m */,
+				CCF640AB1C9570A60022471C /* FirstViewController.h */,
+				CCF640AC1C9570A60022471C /* FirstViewController.m */,
+				CCF640AE1C9570A60022471C /* SecondViewController.h */,
+				CCF640AF1C9570A60022471C /* SecondViewController.m */,
+				CCF640B11C9570A60022471C /* Main.storyboard */,
+				CCF640B41C9570A70022471C /* Assets.xcassets */,
+				CCF640B61C9570A70022471C /* LaunchScreen.storyboard */,
+				CCF640B91C9570A70022471C /* Info.plist */,
+				CCF640A51C9570A60022471C /* Supporting Files */,
+			);
+			path = GeoNotify;
+			sourceTree = "<group>";
+		};
+		CCF640A51C9570A60022471C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCF640A61C9570A60022471C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF640C11C9570A70022471C /* GeoNotifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF640C21C9570A70022471C /* GeoNotifyTests.m */,
+				CCF640C41C9570A70022471C /* Info.plist */,
+			);
+			path = GeoNotifyTests;
+			sourceTree = "<group>";
+		};
+		CCF640CC1C9570A70022471C /* GeoNotifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCF640CD1C9570A70022471C /* GeoNotifyUITests.m */,
+				CCF640CF1C9570A70022471C /* Info.plist */,
+			);
+			path = GeoNotifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCF640A11C9570A60022471C /* GeoNotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF640D21C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotify" */;
+			buildPhases = (
+				CCF6409E1C9570A60022471C /* Sources */,
+				CCF6409F1C9570A60022471C /* Frameworks */,
+				CCF640A01C9570A60022471C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoNotify;
+			productName = GeoNotify;
+			productReference = CCF640A21C9570A60022471C /* GeoNotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCF640BD1C9570A70022471C /* GeoNotifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF640D51C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotifyTests" */;
+			buildPhases = (
+				CCF640BA1C9570A70022471C /* Sources */,
+				CCF640BB1C9570A70022471C /* Frameworks */,
+				CCF640BC1C9570A70022471C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF640C01C9570A70022471C /* PBXTargetDependency */,
+			);
+			name = GeoNotifyTests;
+			productName = GeoNotifyTests;
+			productReference = CCF640BE1C9570A70022471C /* GeoNotifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCF640C81C9570A70022471C /* GeoNotifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF640D81C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotifyUITests" */;
+			buildPhases = (
+				CCF640C51C9570A70022471C /* Sources */,
+				CCF640C61C9570A70022471C /* Frameworks */,
+				CCF640C71C9570A70022471C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF640CB1C9570A70022471C /* PBXTargetDependency */,
+			);
+			name = GeoNotifyUITests;
+			productName = GeoNotifyUITests;
+			productReference = CCF640C91C9570A70022471C /* GeoNotifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCF6409A1C9570A60022471C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Ruter;
+				TargetAttributes = {
+					CCF640A11C9570A60022471C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CCF640BD1C9570A70022471C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CCF640A11C9570A60022471C;
+					};
+					CCF640C81C9570A70022471C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CCF640A11C9570A60022471C;
+					};
+				};
+			};
+			buildConfigurationList = CCF6409D1C9570A60022471C /* Build configuration list for PBXProject "GeoNotify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCF640991C9570A60022471C;
+			productRefGroup = CCF640A31C9570A60022471C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCF640A11C9570A60022471C /* GeoNotify */,
+				CCF640BD1C9570A70022471C /* GeoNotifyTests */,
+				CCF640C81C9570A70022471C /* GeoNotifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCF640A01C9570A60022471C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF640B81C9570A70022471C /* LaunchScreen.storyboard in Resources */,
+				CCF640B51C9570A70022471C /* Assets.xcassets in Resources */,
+				CCF640B31C9570A60022471C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF640BC1C9570A70022471C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF640C71C9570A70022471C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCF6409E1C9570A60022471C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF640B01C9570A60022471C /* SecondViewController.m in Sources */,
+				CCF640AA1C9570A60022471C /* AppDelegate.m in Sources */,
+				CCF640AD1C9570A60022471C /* FirstViewController.m in Sources */,
+				CCF640A71C9570A60022471C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF640BA1C9570A70022471C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF640C31C9570A70022471C /* GeoNotifyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF640C51C9570A70022471C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF640CE1C9570A70022471C /* GeoNotifyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCF640C01C9570A70022471C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF640A11C9570A60022471C /* GeoNotify */;
+			targetProxy = CCF640BF1C9570A70022471C /* PBXContainerItemProxy */;
+		};
+		CCF640CB1C9570A70022471C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF640A11C9570A60022471C /* GeoNotify */;
+			targetProxy = CCF640CA1C9570A70022471C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCF640B11C9570A60022471C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF640B21C9570A60022471C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCF640B61C9570A70022471C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF640B71C9570A70022471C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCF640D01C9570A70022471C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCF640D11C9570A70022471C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCF640D31C9570A70022471C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GeoNotify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.GeoNotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCF640D41C9570A70022471C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GeoNotify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.GeoNotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCF640D61C9570A70022471C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeoNotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.GeoNotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoNotify.app/GeoNotify";
+			};
+			name = Debug;
+		};
+		CCF640D71C9570A70022471C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeoNotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.GeoNotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoNotify.app/GeoNotify";
+			};
+			name = Release;
+		};
+		CCF640D91C9570A70022471C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GeoNotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.GeoNotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GeoNotify;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CCF640DA1C9570A70022471C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GeoNotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ruter.GeoNotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GeoNotify;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCF6409D1C9570A60022471C /* Build configuration list for PBXProject "GeoNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF640D01C9570A70022471C /* Debug */,
+				CCF640D11C9570A70022471C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF640D21C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF640D31C9570A70022471C /* Debug */,
+				CCF640D41C9570A70022471C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCF640D51C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF640D61C9570A70022471C /* Debug */,
+				CCF640D71C9570A70022471C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCF640D81C9570A70022471C /* Build configuration list for PBXNativeTarget "GeoNotifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF640D91C9570A70022471C /* Debug */,
+				CCF640DA1C9570A70022471C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCF6409A1C9570A60022471C /* Project object */;
+}
