@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) CusAnnotation *pin;
 @property (nonatomic, strong) CLGeocoder *geoCoder;
+@property (weak, nonatomic) IBOutlet UITextField *txfAddress;
 
 @end
 
@@ -71,6 +72,36 @@
   region.span.longitudeDelta = 0.01;
   self.mapView.region = region;
 }
+// Pin on map use address
+- (IBAction)btnPin:(id)sender {
+  NSString *address = self.txfAddress.text;
+  if (address == nil || address.length == 0) {
+    return;
+  }
+  // Clear other pins/annotations
+  for (id annotation in self.mapView.annotations) {
+    [self.mapView removeAnnotation:annotation];
+  }
+  // Translate the address to coordinate
+  [self.geoCoder geocodeAddressString:address completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+    if (placemarks.count > 0 && error == nil) {
+      CLPlacemark *mark = [placemarks objectAtIndex:0];
+      NSLog(@"Latitude: %f, Longitude: %f", mark.location.coordinate.latitude, mark.location.coordinate.longitude);
+      // Set region scale
+      MKCoordinateRegion region;
+      region.center.latitude = mark.location.coordinate.latitude;
+      region.center.longitude = mark.location.coordinate.longitude;
+    
+      region.span.latitudeDelta = 0.01;
+      region.span.longitudeDelta = 0.01;
+      self.mapView.region = region;
+      // Set annotation
+      self.pin = [[CusAnnotation alloc] initWith:mark.location.coordinate andTitle:mark.locality andSubTitle:mark.name];
+      [self.mapView addAnnotation:self.pin];
+    }
+  }];
+}
+
 
 #pragma mark - MKMapViewDelegate
 
@@ -100,6 +131,10 @@
       }
     }];
   }
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+  [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {
