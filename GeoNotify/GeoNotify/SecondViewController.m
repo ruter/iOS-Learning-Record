@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "CusAnnotation.h"
 #import <CoreLocation/CoreLocation.h>
+#import "DBUtil.h"
 
 @interface SecondViewController ()
 
@@ -16,6 +17,9 @@
 @property (nonatomic, strong) CusAnnotation *pin;
 @property (nonatomic, strong) CLGeocoder *geoCoder;
 @property (weak, nonatomic) IBOutlet UITextField *txfAddress;
+@property (nonatomic, strong) UIBarButtonItem *btnDone;
+@property (weak, nonatomic) IBOutlet UITextField *txfDescribe;
+@property (nonatomic, strong) DBUtil *db;
 
 @end
 
@@ -33,7 +37,16 @@
   longPress.minimumPressDuration = 0.3;
   [self.mapView addGestureRecognizer:longPress];
   
+  // Add bar button
+  self.btnDone = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(btnDone:)];
+  self.btnDone.enabled = NO;
+  [self.navigationItem setRightBarButtonItem:self.btnDone];
+  
   self.geoCoder = [[CLGeocoder alloc] init];
+  
+  self.db = [[DBUtil alloc] init];
+  [self.db createDb];
+  [self.db createTable];
 }
 
 - (void)handleLongPress:(UIGestureRecognizer *)gestureRecognizer {
@@ -61,6 +74,8 @@
       self.pin = [[CusAnnotation alloc] initWith:touchMapCoordinate andTitle:mark.locality andSubTitle:mark.name];
       // Pin on map
       [self.mapView addAnnotation:self.pin];
+      
+      self.btnDone.enabled = YES;
     }
   }];
   // Set region scale
@@ -72,6 +87,7 @@
   region.span.longitudeDelta = 0.01;
   self.mapView.region = region;
 }
+
 // Pin on map use address
 - (IBAction)btnPin:(id)sender {
   NSString *address = self.txfAddress.text;
@@ -98,10 +114,17 @@
       // Set annotation
       self.pin = [[CusAnnotation alloc] initWith:mark.location.coordinate andTitle:mark.locality andSubTitle:mark.name];
       [self.mapView addAnnotation:self.pin];
+      self.btnDone.enabled = YES;
     }
   }];
 }
-
+// Bar button's action
+- (void)btnDone:(id)sender {
+  NSLog(@"Address: %@, Coord: (%f, %f)", self.pin.subtitle, self.pin.coordinate.latitude, self.pin.coordinate.longitude);
+  NSLog(@"Describe: %@", self.txfDescribe.text);
+  [self.db add:self.pin.subtitle andLatitude:self.pin.coordinate.latitude andLongitude:self.pin.coordinate.longitude andDescribe:self.txfDescribe.text];
+  [self.db query];
+}
 
 #pragma mark - MKMapViewDelegate
 
